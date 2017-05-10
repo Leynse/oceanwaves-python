@@ -48,7 +48,7 @@ def simplify(units):
         
 
     # only continue in case of string or unicode input
-    if type(units) not in [str, unicode]:
+    if type(units) is not str:
         return units
     
     # remove spaces around operators (space itself is also a multiplication operator)
